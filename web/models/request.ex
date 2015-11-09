@@ -3,6 +3,7 @@ defmodule Sudamerik.Request do
 
   schema "requests" do
     field :owner, :string
+		has_many :request_items, Sudamerik.RequestItem
 
     timestamps
   end
