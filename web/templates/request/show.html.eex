@@ -1,0 +1,13 @@
+<h2>Show request</h2>
+
+<ul>
+
+  <li>
+    <strong>Owner:</strong>
+    <%= @request.owner %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: request_path(@conn, :edit, @request) %>
+<%= link "Back", to: request_path(@conn, :index) %>

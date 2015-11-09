@@ -17,6 +17,8 @@ defmodule Sudamerik.Router do
     pipe_through :browser # Use the default browser stack
 
     resources "/products", ProductController
+    resources "/requests", RequestController
+
     get "/", PageController, :index
   end
 
