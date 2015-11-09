@@ -16,6 +16,7 @@ defmodule Sudamerik.Router do
   scope "/", Sudamerik do
     pipe_through :browser # Use the default browser stack
 
+    resources "/products", ProductController
     get "/", PageController, :index
   end
 

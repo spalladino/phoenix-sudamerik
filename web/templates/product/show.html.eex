@@ -1,0 +1,38 @@
+<h2>Show product</h2>
+
+<ul>
+
+  <li>
+    <strong>Code:</strong>
+    <%= @product.code %>
+  </li>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @product.name %>
+  </li>
+
+  <li>
+    <strong>Group:</strong>
+    <%= @product.group %>
+  </li>
+
+  <li>
+    <strong>Price:</strong>
+    <%= @product.price %>
+  </li>
+
+  <li>
+    <strong>Unit:</strong>
+    <%= @product.unit %>
+  </li>
+
+  <li>
+    <strong>Unit qty:</strong>
+    <%= @product.unit_qty %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: product_path(@conn, :edit, @product) %>
+<%= link "Back", to: product_path(@conn, :index) %>
